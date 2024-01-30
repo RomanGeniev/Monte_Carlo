@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="field" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SegmentedAreaMonteCarlo">
+   <children>
+      <Canvas fx:id="graph" height="600.0" layoutX="-6.0" layoutY="-102.0" width="600.0" />
+      <Button fx:id="back_button" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" text="Очистить" textOverrun="CLIP" />
+      <Button fx:id="run_Programm" layoutX="9.0" layoutY="498.0" mnemonicParsing="false" text="Добавить точки" />
+      <TextField fx:id="total_points" layoutX="220.0" layoutY="15.0" />
+      <BarChart fx:id="barChart" layoutX="611.0" layoutY="205.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="coordinateInfo" layoutX="220.0" layoutY="347.0" text="X0 = 2, Y0 = 0, R = 3, C = 3 " />
+      <Label fx:id="answer" layoutX="432.0" layoutY="19.0" />
+   </children>
+</Pane>
